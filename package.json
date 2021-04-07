@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "hello": "nodemon examples/hello",
-    "auth": "nodemon examples/auth"
+    "auth": "nodemon examples/auth",
+    "routing": "nodemon examples/routing"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
