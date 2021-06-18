@@ -1,28 +1,6 @@
 {
   "name": "express-js-example",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "nodemon ./bin/www",
-    "hello": "nodemon examples/hello",
-    "auth": "nodemon examples/auth",
-    "routing": "nodemon examples/routing",
-    "middleware": "nodemon examples/middleware",
-    "template": "nodemon examples/template"
-  },
-  "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "ejs": "^3.1.6",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1",
-    "pug": "^3.0.2"
-  },
-  "devDependencies": {
-    "express-session": "^1.17.1",
-    "nodemon": "^2.0.7",
-    "pbkdf2-password": "^1.2.1"
-  }
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
 }
