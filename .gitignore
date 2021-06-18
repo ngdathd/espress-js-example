@@ -1,3 +1,7 @@
+# OSX
+#
+.DS_Store
+
 # Use yarn.lock instead
 package-lock.json
 yarn.json
