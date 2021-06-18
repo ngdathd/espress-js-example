@@ -1,12 +1,17 @@
+import {connectDatabase, syncDatabase} from 'configs/databases';
 import {port} from 'configs/vars';
-import express from 'express';
 
-const app = express();
+(async () => {
+    try {
+        await connectDatabase();
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+        // eslint-disable-next-line global-require
+        const app = require('configs/app');
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
-});
+        await syncDatabase();
+
+        app.default.listen(port);
+    } catch (error) {
+        console.log(error);
+    }
+})();

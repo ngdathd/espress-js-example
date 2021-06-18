@@ -1,0 +1,5 @@
+{
+    "unauthorized": "Unauthorized",
+    "forbidden": "Forbidden",
+    "not_found": "Not found"
+}

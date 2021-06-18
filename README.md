@@ -24,3 +24,6 @@ Example expressJS
 
 7. Sort import
    yarn add --dev eslint-plugin-simple-import-sort
+
+8. Add mongodb, postgres, sequelize
+   yarn add mongoose pg pg-hstore sequelize
