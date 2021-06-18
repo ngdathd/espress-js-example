@@ -21,3 +21,6 @@ Example expressJS
 
 6. Add dotenv-safe to hide code
    yarn add dotenv-safe
+
+7. Sort import
+   yarn add --dev eslint-plugin-simple-import-sort

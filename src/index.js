@@ -1,5 +1,5 @@
-import express from 'express';
 import {port} from 'configs/vars';
+import express from 'express';
 
 const app = express();
 

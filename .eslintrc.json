@@ -1,8 +1,10 @@
 {
     "extends": ["airbnb-base", "prettier"],
-    "plugins": ["prettier"],
+    "plugins": ["simple-import-sort"],
     "rules": {
-        "indent": ["error", 4]
+        "indent": ["error", 4],
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error"
     },
     "settings": {
         "import/resolver": {
