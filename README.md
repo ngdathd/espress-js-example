@@ -13,3 +13,6 @@ Example expressJS
 
 4. Init Eslint Airbnb
    yarn add --dev eslint eslint-config-airbnb-base eslint-plugin-import
+
+5. Babel import
+   yarn add --dev @babel/cli @babel/core @babel/node @babel/plugin-transform-modules-commonjs @babel/preset-env babel-plugin-module-resolver nodemon
