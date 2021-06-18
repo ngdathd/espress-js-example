@@ -10,3 +10,6 @@ Example expressJS
 
 3. Init ExpressJs
    yarn add express
+
+4. Init Eslint Airbnb
+   yarn add --dev eslint eslint-config-airbnb-base eslint-plugin-import
