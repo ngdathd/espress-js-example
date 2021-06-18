@@ -27,3 +27,11 @@ Example expressJS
 
 8. Add mongodb, postgres, sequelize
    yarn add mongoose pg pg-hstore sequelize
+
+9. How to run
+   9.1. Install dependencies:
+   yarn
+   9.2. Set environment variables:
+   cp .env.example .env
+   9.3. Running Locally:
+   yarn dev
