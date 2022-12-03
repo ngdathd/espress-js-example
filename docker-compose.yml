@@ -1,0 +1,41 @@
+version: '3.9'
+
+services:
+  playzone-backend:
+    container_name: playzone-backend
+    build:
+      context: .
+      target: development
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - ${APP_PORT}:3000
+    command: npm run start:dev
+    depends_on:
+      - playzone-redis
+      - playzone-postgres
+    restart: unless-stopped
+
+  playzone-redis:
+    image: redis:6.2.6-alpine
+    container_name: playzone-redis
+    command: redis-server --requirepass 9230627
+    hostname: redis1
+    volumes:
+      - .docker/data/redis:/data
+    ports:
+      - 6381:6379
+    restart: unless-stopped
+
+  playzone-postgres:
+    image: postgres:14.2-alpine
+    container_name: playzone-postgres
+    environment:
+      - POSTGRES_USER:${POSTGRES_USER}
+      - POSTGRES_PASSWORD:${POSTGRES_PASSWORD}
+    volumes:
+      - .docker/data/postgres/db:/var/lib/postgresql/data
+    ports:
+      - ${POSTGRES_POST}:5432
+    restart: unless-stopped
